@@ -5,6 +5,6 @@ from datetime import datetime
 
 class crashReport(models.Model):
     crash_report = models.TextField()
-    date = models.DateTimeField(auto_now_add=True, blank=True)
+    date = models.DateTimeField(auto_now_add=True)
     android_ver = models.CharField(max_length=100)
     brand = models.CharField(max_length=100)
