@@ -15,5 +15,20 @@ class crashReport(models.Model):
     app_package = models.CharField(max_length=100, null=True)
     product = models.CharField(max_length=100, null=True)
 
+    shared_pref = models.CharField(max_length=100, null=True)
+    available_memory = models.CharField(max_length=100, null=True)
+    total_memory = models.CharField(max_length=100, null=True)
+    file_path = models.CharField(max_length=200, null=True)
+    user_comment = models.TextField(null=True)
+    device_features = models.TextField(null=True)
+    system_settings = models.TextField(null=True)
+    crash_date = models.CharField(max_length=100, null=True)
+    app_start_date = models.CharField(max_length=100, null=True)
+    global_settings = models.TextField(null=True)
+    device_display =  models.TextField(null=True)
+    initial_config = models.TextField(null=True)
+    crash_config = models.TextField(null=True)
+    environment = models.TextField(null=True)
+
     def __str__(self):
     	return str(self.date)
