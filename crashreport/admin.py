@@ -5,7 +5,7 @@ from .models import crashReport
 
 @admin.register(crashReport)
 class ReportAdmin(admin.ModelAdmin):
-	list_display = ('app_verson_code', 'device_model', 'crash_date', )
-	list_filter = ['app_verson_code', 'device_model', 'crash_date', ]
+	list_display = ('app_package', 'app_verson_code', 'device_model', 'crash_date', )
+	list_filter = ['app_package', 'app_verson_code', 'device_model', 'crash_date', ]
 
 # admin.site.register(crashReport)
