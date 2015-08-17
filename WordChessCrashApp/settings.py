@@ -79,8 +79,8 @@ else:
                         'NAME': 'crashreport',
                         'USER': 'farhan',
                         'PASSWORD': '9farhan',
-                        'HOST': '127.0.0.1',
-                        'PORT': '5433',
+                        'HOST': 'localhost',
+                        'PORT': '5432',
                         }
                      }
 
